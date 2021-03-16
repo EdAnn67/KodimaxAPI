@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d30d8aa7253f4648904111615d217185" Name="Diagram1" ZoomLevel="75">
+        <EntityTypeShape EntityType="KodimaxModel.Boleto" Width="1.5" PointX="13.125" PointY="0.5" />
+        <EntityTypeShape EntityType="KodimaxModel.Cargo" Width="1.5" PointX="18.375" PointY="1.875" />
+        <EntityTypeShape EntityType="KodimaxModel.Genero" Width="1.5" PointX="8.625" PointY="1.375" />
+        <EntityTypeShape EntityType="KodimaxModel.Golosina" Width="1.5" PointX="20.875" PointY="4.625" />
+        <EntityTypeShape EntityType="KodimaxModel.Pelicula" Width="1.5" PointX="10.875" PointY="1" />
+        <EntityTypeShape EntityType="KodimaxModel.Sala" Width="1.5" PointX="12.625" PointY="4.5" />
+        <EntityTypeShape EntityType="KodimaxModel.Tipo" Width="1.5" PointX="18" PointY="4.625" />
+        <EntityTypeShape EntityType="KodimaxModel.Usuario" Width="1.5" PointX="16" PointY="1.5" />
+        <AssociationConnector Association="KodimaxModel.FK_Boleto_Pelicula" />
+        <AssociationConnector Association="KodimaxModel.FK_Boleto_Sala" />
+        <AssociationConnector Association="KodimaxModel.FK_Boleto_Usuario" />
+        <AssociationConnector Association="KodimaxModel.FK_Boleto_Usuario1" />
+        <AssociationConnector Association="KodimaxModel.FK_Usuario_Cargo" />
+        <AssociationConnector Association="KodimaxModel.FK_Pelicula_Genero" />
+        <AssociationConnector Association="KodimaxModel.FK_Golosina_Tipo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
