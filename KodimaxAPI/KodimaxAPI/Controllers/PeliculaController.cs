@@ -63,11 +63,12 @@ namespace KodimaxAPI.Controllers
             {
                 using (var db = new KodimaxContext())
                 {
-                    Pelicula P = db.Pelicula.Find(p);
+                    Pelicula P = db.Pelicula.Find(p.Id);
                     P.Nombre = p.Nombre;
                     P.Duracion = p.Duracion;
                     P.Genero = p.Genero;
                     P.Imagen = p.Imagen;
+                    db.SaveChanges();
                     return View(P);
                 }
             }
